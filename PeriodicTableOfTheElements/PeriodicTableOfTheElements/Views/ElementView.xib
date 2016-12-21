@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ElementView" customModule="PeriodicTableOfTheElements" customModuleProvider="target">
+            <connections>
+                <outlet property="numberLabel" destination="hgR-hO-FuM" id="bn6-uv-1Vk"/>
+                <outlet property="symbolLabel" destination="lqH-Rb-fBh" id="UvZ-gY-Xtf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="f1K-hM-MLp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="lqH-Rb-fBh" userLabel="Symbol">
+                    <rect key="frame" x="19" y="77.5" width="152" height="129.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hgR-hO-FuM">
+                    <rect key="frame" x="59" y="38.5" width="72.5" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lqH-Rb-fBh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="8RX-5t-pWb"/>
+                <constraint firstItem="lqH-Rb-fBh" firstAttribute="top" secondItem="hgR-hO-FuM" secondAttribute="bottom" id="IOu-OA-iRB"/>
+                <constraint firstItem="hgR-hO-FuM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="K3a-4y-1Fz"/>
+                <constraint firstItem="lqH-Rb-fBh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.1" id="bNN-iz-n21"/>
+                <constraint firstItem="lqH-Rb-fBh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dID-rr-f1t"/>
+                <constraint firstItem="lqH-Rb-fBh" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="ga3-Lc-RhP"/>
+                <constraint firstItem="hgR-hO-FuM" firstAttribute="height" secondItem="lqH-Rb-fBh" secondAttribute="height" multiplier="0.3" id="xhR-sA-mBG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="113" y="-131.5"/>
+        </view>
+    </objects>
+</document>
